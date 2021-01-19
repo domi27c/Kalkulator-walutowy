@@ -1,0 +1,471 @@
+body
+{
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e0dbdb;
+  padding: 0;
+  margin: 0;
+}
+
+/*Start Header Section (Landing Page) *****************************************/
+.jumbotron {
+  position: relative;
+  background:none;
+  margin-bottom: 0;
+}
+.jumbotron:after {
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/dolar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 35vh;
+  opacity : 0.8;
+  z-index: -1;
+}
+
+.jumbotron h1
+{
+  font-weight: 700;
+  font-size: 3.8rem;
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
+}
+
+.jumbotron .btn 
+{
+  min-width: 15vw;
+  height: auto;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.548);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.jumbotron .btn:hover
+{
+  cursor: pointer;
+}
+/*End Header Section (Landing Page) *****************************************/
+
+/*Start Navbar Section ******************************************************/
+.navbar
+{
+  min-height: 3.6rem;
+  width: 100%;
+  position: absolute;
+  top: 60;
+  left: 0;
+}
+
+.navbar-nav li
+{
+  font-size: 1.3rem;
+  margin-right: .8rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
+.active
+{
+  background-color: #f08e06;
+  border-radius: .4rem;
+}
+/*End Navbar Section ******************************************************/
+
+/*Start Content Section ***************************************************/
+.container-fluid
+{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-top: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.welcome_page
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome_page h1
+{
+  font-size: 2.5rem;
+  font-family: 'Rajdhani', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.welcome_page h5
+{
+  margin: 3.1rem;
+}
+
+.welcome_page h3
+{
+  font-weight: 700;
+}
+
+#hand_with_bag
+{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hand_with_bag .hand_with_bag
+{
+  width: 20vw;
+  height: 20vh;
+}
+
+/*End Content Section *****************************************/
+
+/*Start Footer Section *****************************************/
+footer
+{
+  background-color: #585555;
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 2rem;
+  border-top: 2px solid #f08e06;
+}
+.footer
+{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+footer img
+{
+  height: 3rem;
+  margin: 1.5rem 0;
+}
+footer a
+{
+  color: white;
+}
+footer svg.svg-inline--fa
+{
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover
+{
+  color: #ecbd7c !important;
+}
+hr.socket
+{
+  width: 100%;
+  border-top: .2rem solid #666b71;
+  margin-top: 3rem;
+}
+
+
+
+
+
+
+
+/*--- Media Queries --- */
+@media (max-width: 450px) and (max-height: 850px)
+{
+  /* Header Section (Landing Page) */
+  .jumbotron:after
+  {
+    height: 60vh;
+  }
+  .jumbotron h1
+  {
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    margin-bottom: 2.5rem;
+  }
+
+  /* Content Section */
+  .container-fluid
+  {
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  .welcome_page h1
+  {
+    font-size: 2rem;
+  }
+  .welcome_page h5
+  {
+    font-size: 1rem;
+  }
+  .welcome_page h3
+  {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  #hand_with_bag .hand_with_bag
+  {
+    width: 80vw;
+    height: 30vh;
+  }
+}
+
+@media (min-width: 510px) and (max-width: 600px) and (max-height: 800px)
+{
+  /* Header Section (Landing Page) */
+  .jumbotron:after
+  {
+    height: 40vh;
+  }
+  .jumbotron h1
+  {
+    font-size: 3rem;
+  }
+
+  /* Content Section */
+  .container-fluid
+  {
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  .welcome_page h1
+  {
+    font-size: 2rem;
+  }
+  .welcome_page h5
+  {
+    font-size: 1rem;
+  }
+  .welcome_page h3
+  {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  #hand_with_bag .hand_with_bag
+  {
+    width: 80vw;
+    height: 30vh;
+  }
+}
+
+@media (min-width: 700px) and (max-height: 1400px)
+{
+  #hand_with_bag .hand_with_bag
+  {
+    width: 60vw;
+    height: 30vh;
+  }
+}
+
+@media (min-height: 500px) and (max-height: 600px) and (max-width: 500px)
+{
+/* Header Section (Landing Page) */
+.jumbotron:after
+{
+  height: 60vh;
+}
+.jumbotron h1
+{
+  font-size: 2.5rem;
+}
+/* Navbar Section */
+.navbar
+{
+  top: 60vh;
+}
+
+/* Content Section */
+.container-fluid
+{
+  padding-top: 5rem;
+}
+.welcome_page h5
+{
+  margin-top: 1rem;
+}
+}
+
+@media (min-height: 660px) and (max-height: 690px) and (max-width: 500px)
+{
+/* Header Section (Landing Page) */
+.jumbotron:after
+{
+  height: 55vh;
+}
+.jumbotron h1
+{
+  margin-top: 1.5rem;
+}
+/* Navbar Section */
+.navbar
+{
+  top: 50vh;
+}
+}
+
+@media (min-height: 700px) and (max-width: 600px)
+{
+  /* Header Section (Landing Page) */
+  .jumbotron:after
+  {
+    height: 50vh;
+  }
+}
+
+@media (min-height: 800px) and (max-width: 500px)
+{
+  /* Header Section (Landing Page) */
+  .jumbotron:after
+  {
+    height: 45vh;
+  }
+  .jumbotron h1
+  {
+    margin-top: 2rem;
+  }
+
+  /* Content Section */
+  .container-fluid
+  {
+    padding-top: 5rem;
+  }
+  #hand_with_bag .hand_with_bag
+  {
+    width: 85vw;
+  }
+}
+
+@media (min-height: 900px) and (max-width: 800px)
+{
+  /* Header Section (Landing Page) */
+  .jumbotron:after
+  {
+    height: 40vh;
+  }
+  .jumbotron h1
+  {
+    font-size: 3.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 2.5rem;
+  }
+
+  /* Content Section */
+  .container-fluid
+  {
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  .welcome_page h1
+  {
+    font-size: 2.8rem;
+  }
+  .welcome_page h5
+  {
+    font-size: 1.4rem;
+  }
+  .welcome_page h3
+  {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  #hand_with_bag .hand_with_bag
+  {
+    width: 80vw;
+    height: 30vh;
+  }
+  .footer
+  {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-height: 1200px) and (max-width: 1100px)
+{
+  /* Header Section (Landing Page) */
+  .jumbotron:after
+  {
+    height: 30vh;
+  }
+  .jumbotron h1
+  {
+    font-size: 4.7rem;
+  }
+
+  /* Navbar Section */
+  .navbar
+  {
+    top: 28vh;
+  }
+
+  /* Content Section */
+  .container-fluid
+  {
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  .welcome_page h1
+  {
+    font-size: 2.8rem;
+  }
+  .welcome_page h5
+  {
+    font-size: 1.4rem;
+  }
+  .welcome_page h3
+  {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  #hand_with_bag .hand_with_bag
+  {
+    width: 60vw;
+    height: 20vh;
+  }
+  .footer
+  {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-height: 750px) and (min-width: 1500px)
+{
+  #hand_with_bag .hand_with_bag
+  {
+    width: 40vw;
+    height: 30vh;
+  }
+}
+
+@media (max-height: 830px) and (min-width: 1100px)
+{
+  .jumbotron:after
+  {
+    height: 40vh;
+  }
+}
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

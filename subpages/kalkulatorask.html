@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>kalkulator</title>
+        <meta name="description" content="kursy walutowe">
+        <meta name="keywords" content="kursy, waluta">
+        <meta name="author" content="Dominik Centkowski, Maciej Gapski">
+        <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+        
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rajdhani:wght@700&family=Shrikhand&display=swap" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-latest.min.js" defer></script>
+        <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+        <script src="../bootstrap/js/bootstrap.min.js" defer></script>
+    </head>
+    <body>
+
+        <header>
+          
+            <div class="jumbotron text-center">
+                <h1>kalkulator walutowy. Kursy walutowe</h1>
+                <a class="btn btn-warning" href="kalkulatorbid.html" role="button">Oblicz kurs</a>
+            </div>
+
+        </header>
+          
+        <nav class="navbar navbar-dark bg-dark navbar-expand-xl py-0">
+	
+			<a class="navbar-brand" href="../index.html"><img src="../img/logo.png" width="30" height="30" class="d-none d-md-inline-block mx-sm-3 align-center" alt=""></a>
+	
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<div class="collapse navbar-collapse" id="mainmenu">
+				
+				<ul class="navbar-nav ml-3 mr-auto">
+	
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html">Start</a>
+					</li>
+    
+                    <li class="nav-item active">
+						<a class="nav-link" href="kalkulatorbid.html">Kalkulator walutowy</a>
+					</li>
+                    
+                    <li class="nav-item">
+						<a class="nav-link" href="kursy.html">Kursy walut</a>
+					</li>
+	
+					<li class="nav-item">
+						<a class="nav-link" href="kontakt.html">Kontakt</a>
+					</li>
+	
+					<li class="nav-item">
+						<a class="nav-link" href="#">Forum</a>
+					</li>
+	
+				</ul>
+	
+				<form class="form-inline">
+	
+					<input class="form-control mr-1" type="search" placeholder="wyszukaj" aria-label="wyszukaj">
+					<button class="btn btn-warning" type="submit">Znajdź</button>
+					
+				</form>
+	
+			</div>
+	
+		</nav>
+          
+        <main>
+
+            <section>
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-md-12 text-center">
+                            <h3>Kalkulator walutowy</h3>
+                                <button type="button" class="btn btn-primary btn-lg btn-block" onClick="location.href='kalkulatorbid.html';">Kupno</button>
+                                <button type="button" class="btn btn-secondary btn-lg btn-block active" onClick="location.href='kalkulatorask.html';">Sprzedaż</button>
+                            <hr class="warning">
+                        
+                            <div id="calc">
+                                <table id="kalkulator">
+                                    <tr>
+                                        <td>
+                                            <strong>Podaj kwotę:</strong>
+                                        </td>
+                                        <td>
+                                            <input type="number" name="start-value" min="0" class="start-value" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Waluta początkowa:
+                                        </td>
+                                        <td>
+                                            <select class="select-1"></select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Waluta końcowa:
+                                        </td>
+                                        <td>
+                                            <select class="select-2"></select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <input type="submit" value="Przelicz" class="submit-button" />
+                                            <div class="result">
+                                                <span></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <script src="../js/walutyask.js"></script>
+                        
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+       
+        <footer>
+            <div id="contact" class="offset">
+                <div class="row justify-content-center">
+                
+                    <div class="col-md-5 text-center">
+                        <img src="../img/logo.png">
+                        <p>On our website you can check current currency values ​​and calculate their exchange rate.</p>
+                        <strong>Contact Info</strong>
+                        <p>(888) 888-8888<br>email@waluty.com</p>
+                        <a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                
+                    <hr class="socket">
+                    &copy; Kalkulator walutowy
+                
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
