@@ -1,0 +1,18 @@
+{
+  "name": "kurs_walut_nbp-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pablop76",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp-sass": "^4.0.1"
+  }
+}
